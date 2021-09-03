@@ -1,1 +1,25 @@
 header.header
+  .header-top
+    .container
+      .location.header-top__location
+        .location__header
+        span.location__current Нижний Новгород
+        .location__body
+      include ../navigation/main-nav
+      .user-nav.header-top__user-nav 
+        a(href="#").user-nav__link Войти
+  .header-main
+    .container
+      .catalog.header-main__catalog 
+        .sandwich 
+          .sandwich__line.sandwich__line--top 
+          .sandwich__line.sandwich__line--middle 
+          .sandwich__line.sandwich__line--bottom
+        span.catalog__title Каталог стройматериалов
+      .search.header-main__search
+        input(placeholder="Артикул или название товара").input-field
+      .order-callback 
+        span.order-callback__description Звоните круглосуточно
+        a(href="tel:+74993448888").order-callback__phone +7 499 344 88 88
+        a(href="#").order-callback__link Заказать звонок
+      include ../basket/basket-prev
