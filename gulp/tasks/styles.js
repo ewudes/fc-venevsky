@@ -5,6 +5,7 @@ const plumber = require('gulp-plumber'),
       csscomb = require('gulp-csscomb'),
       sourcemaps = require('gulp-sourcemaps'),
       rename = require('gulp-rename'),
+      gulpStylelint = require('gulp-stylelint');
       stylesPATH = {
           "input": "./dev/static/styles/",
           "output": "./build/static/css/"
@@ -18,6 +19,14 @@ module.exports = function () {
             .pipe(scss())
             .pipe(autoprefixer({
                  overrideBrowserslist:  ['last 3 versions']
+            }))
+            .pipe(gulpStylelint({
+              reporters: [
+                {
+                  formatter: 'string',
+                  console: true
+                }
+              ]
             }))
             .pipe(sourcemaps.write())
             .pipe(rename('styles.min.css'))
