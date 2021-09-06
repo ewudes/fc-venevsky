@@ -1,34 +1,40 @@
 .sandwich {
-    cursor: pointer;
-    height: 20px;
-    position: relative;
-    width: 32px;
-    &.is {
-        &-active {
-            .sandwich__line {
-                &--top {
-                    top: 10px;
-                    transform: rotate(45deg);
-                }
-                &--middle { opacity: 0; }
-                &--bottom {
-                    top: 10px;
-                    transform: rotate(-45deg);
-                }
-            }
-        }
-    }
-    &__line {
-        background-color: #000000;
-        display: block;
-        height: 2px;
-        left: 0;
-        position: absolute;
-        transition: all linear .4s;
-        width: 100%;
-        &--top { top: 0; }
-        &--middle { top: 9px; }
-        &--bottom { top: 18px; }
-    }
-}
+  position: relative;
+  width: 32px;
+  height: 20px;
+  cursor: pointer;
 
+  &__line {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: all linear .4s;
+
+    &--top { top: 0; }
+
+    &--middle { top: 9px; }
+
+    &--bottom { top: 18px; }
+  }
+
+  &.is {
+    &-active {
+      .sandwich__line {
+        &--top {
+          top: 10px;
+          transform: rotate(45deg);
+        }
+
+        &--middle { opacity: 0; }
+
+        &--bottom {
+          top: 10px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}

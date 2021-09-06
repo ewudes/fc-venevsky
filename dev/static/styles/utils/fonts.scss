@@ -1,31 +1,35 @@
 @font-face {
   font-family: 'source_sans_proregular';
-  src: url('/static/fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.woff2') format('woff2'),
-       url('/static/sourcesanspro-regular/sourcesanspro-regular-webfont.woff') format('woff');
-  font-weight: normal;
+  src:
+    url('/static/fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.woff2') format('woff2'),
+    url('/static/sourcesanspro-regular/sourcesanspro-regular-webfont.woff') format('woff');
   font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
   font-family: 'source_sans_probold';
-  src: url('/static/fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.woff2') format('woff2'),
-       url('/static/fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.woff') format('woff');
-  font-weight: normal;
+  src:
+    url('/static/fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.woff2') format('woff2'),
+    url('/static/fonts/sourcesanspro-bold/sourcesanspro-bold-webfont.woff') format('woff');
   font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
   font-family: 'source_sans_problack';
-  src: url('/static/fonts/sourcesanspro-black/sourcesanspro-black-webfont.woff2') format('woff2'),
-       url('/static/fonts/sourcesanspro-black/sourcesanspro-black-webfont.woff') format('woff');
-  font-weight: normal;
+  src:
+    url('/static/fonts/sourcesanspro-black/sourcesanspro-black-webfont.woff2') format('woff2'),
+    url('/static/fonts/sourcesanspro-black/sourcesanspro-black-webfont.woff') format('woff');
   font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
   font-family: 'source_sans_prosemibold';
-  src: url('/static/fonts/sourcesanspro-semibold/sourcesanspro-semibold-webfont.woff2') format('woff2'),
-       url('/static/fonts/sourcesanspro-semibold/sourcesanspro-semibold-webfont.woff') format('woff');
-  font-weight: normal;
+  src:
+    url('/static/fonts/sourcesanspro-semibold/sourcesanspro-semibold-webfont.woff2') format('woff2'),
+    url('/static/fonts/sourcesanspro-semibold/sourcesanspro-semibold-webfont.woff') format('woff');
   font-style: normal;
+  font-weight: normal;
 }

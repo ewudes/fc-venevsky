@@ -3,17 +3,21 @@
     display: flex;
     align-items: center;
   }
+
   &-top {
     padding: 12px 0;
+
     &__user-nav {
       margin-left: auto;
     }
+
     &__location {
       margin-right: 80px;
     }
   }
+
   &-main {
-    background-color: $dark-bg-color;
     padding: 20px 0;
+    background-color: $dark-bg-color;
   }
 }
