@@ -1,8 +1,14 @@
 {
   "name": "fc-venevsky",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "dependencies": {
+    "svg4everybody": "^2.1.9"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
@@ -31,9 +37,6 @@
     "imagemin-jpeg-recompress": "^6.0.0",
     "stylelint-config-recess-order": "^2.5.0",
     "stylelint-config-standard": "^22.0.0"
-  },
-  "dependencies": {
-    "svg4everybody": "^2.1.9"
   },
   "browserslist": [
     "last 3 version",

@@ -5,7 +5,8 @@ const plumber = require('gulp-plumber'),
   csscomb = require('gulp-csscomb'),
   sourcemaps = require('gulp-sourcemaps'),
   rename = require('gulp-rename'),
-  gulpStylelint = require('gulp-stylelint');
+  //FIXME: Починить gulp-stylelint
+  // gulpStylelint = require('gulp-stylelint');
   stylesPATH = {
     "input": "./dev/static/styles/",
     "output": "./build/static/css/"
@@ -15,14 +16,14 @@ module.exports = function () {
   $.gulp.task('styles:dev', () => {
     return $.gulp.src(stylesPATH.input + 'styles.scss')
       .pipe(plumber())
-      .pipe(gulpStylelint({
-        reporters: [
-          {
-            formatter: 'string',
-            console: true
-          }
-        ]
-      }))
+      // .pipe(gulpStylelint({
+      //   reporters: [
+      //     {
+      //       formatter: 'string',
+      //       console: true
+      //     }
+      //   ]
+      // }))
       .pipe(sourcemaps.init())
       .pipe(scss())
       .pipe(autoprefixer({
