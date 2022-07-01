@@ -18,6 +18,20 @@
 
   &-main {
     padding: 20px 0;
+    color: $white;
     background-color: $dark-bg-color;
+
+    .container {
+      & > * {
+
+        &:not(:last-child) {
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+
+  &__basket-prev {
+    margin-left: auto;
   }
 }

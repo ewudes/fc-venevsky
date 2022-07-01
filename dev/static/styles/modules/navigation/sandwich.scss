@@ -1,8 +1,8 @@
 .sandwich {
   position: relative;
-  display: none;
-  width: 32px;
-  height: 20px;
+  // display: none;
+  width: 23px;
+  height: 14px;
   cursor: pointer;
 
   &__line {
@@ -17,14 +17,14 @@
     &--top {
       top: 0;
     }
-    &--middle { top: 9px; }
-    &--bottom { top: 18px; }
+    &--middle { top: 6px; }
+    &--bottom { top: 12px; }
   }
 
   &--active {
     .sandwich__line {
       &--top {
-        top: 10px;
+        top: 6px;
         transform: rotate(45deg);
       }
 
@@ -33,7 +33,7 @@
       }
 
       &--bottom {
-        top: 10px;
+        top: 6px;
         transform: rotate(-45deg);
       }
     }
