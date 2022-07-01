@@ -1,6 +1,7 @@
 .location {
-  flex: 0 0 165px;
-  width: 165px;
+  $locationWidtch: 175px;
+  flex: 0 0 $locationWidtch;
+  width: $locationWidtch;
 
   &__header {
     display: flex;
@@ -10,6 +11,11 @@
     & > * {
       &:not(:last-child) { margin-right: 10px; }
     }
+  }
+
+  &__icon {
+    @include size(16px);
+    fill: $base-text-color;
   }
 
   &__current {
