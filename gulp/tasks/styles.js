@@ -1,8 +1,7 @@
 const plumber = require('gulp-plumber'),
-  scss = require('gulp-sass'),
+  scss = require('gulp-sass')(require('sass')),
   autoprefixer = require('gulp-autoprefixer'),
   csso = require('gulp-csso'),
-  csscomb = require('gulp-csscomb'),
   sourcemaps = require('gulp-sourcemaps'),
   rename = require('gulp-rename'),
   //FIXME: Починить gulp-stylelint
@@ -43,7 +42,6 @@ module.exports = function () {
         overrideBrowserslist:  ['last 3 versions']
       }))
       .pipe(autoprefixer())
-      .pipe(csscomb())
       .pipe(rename('styles.min.css'))
       .pipe($.gulp.dest(stylesPATH.output))
   });
@@ -52,7 +50,6 @@ module.exports = function () {
     return $.gulp.src(stylesPATH.input + 'styles.scss')
       .pipe(scss())
       .pipe(autoprefixer())
-      .pipe(csscomb())
       .pipe(csso())
       .pipe(rename('styles.min.css'))
       .pipe($.gulp.dest(stylesPATH.output))
